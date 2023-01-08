@@ -10,8 +10,6 @@ function DataTable(config, data) {
    </thead>
    <tbody>`;
 
-  console.log(data);
-
   for (let i = 0; i < data.length; i++) {
     tableHtml += `<tr>
         <td>${i + 1}</td>
@@ -25,45 +23,7 @@ function DataTable(config, data) {
    </tbody>
  </table>`;
 
-  console.log(tableHtml);
   document.getElementById("usersTable").innerHTML = tableHtml;
-
-  //   let newTable = document.getElementById("usersTable");
-  //   let table = document.createElement("table");
-  //   let tHead = document.createElement("thead");
-  //   let tBody = document.createElement("tbody");
-
-  //   newTable.append(table);
-  //   table.append(tHead);
-
-  //   createHead(config);
-  //   console.log(createHead);
-
-  //   createBody(data);
-  //   console.log(createBody);
-
-  //   function createHead(config) {
-  //     let tr = document.createElement("tr");
-  //     let th = document.createElement("th");
-
-  //     tHead.append(tr);
-  //     th.innerText = "№";
-  //     tr.append(th);
-
-  //     config.columns.forEach((el) => {
-  //       let elementOfThead = document.createElement("th");
-  //       elementOfThead.innerText = el.title;
-  //       tr.append(elementOfThead);
-  //     });
-  //   }
-  //   function createBody(data) {
-  //     let tr = document.createElement("tr");
-  //     let td = document.createElement("td");
-  //     tBody.append(tr);
-  //     for (let i = 0; i < data.lenght; i++) {
-  //       td.append(i);
-  //     }
-  //   }
 }
 
 const config1 = {

@@ -13,6 +13,15 @@ thead {
   color: rgb(59, 59, 59);
 }
 
+/* tbody tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+tbody th:nth-child(even),
+tbody td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+} */
+
 tbody {
   background-color: #e7e6ea;
   color: rgb(77, 76, 76);
